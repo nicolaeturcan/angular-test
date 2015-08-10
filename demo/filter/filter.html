@@ -37,7 +37,7 @@
     </table>
 </script>
 
-<!-- Begin Filter Outside -->
+<!-- Begin Filter Outside --><!--
 <div ng-class="{active: models.activeTab === 'OutSide' || !models.activeTab}" class="tab-pane row">
     <div class="col-xs-3">
         <panel title="Filter for Table (Outside)">
@@ -84,10 +84,10 @@
 
     </div>
 </div>
-<!-- End init Filter-Outside -->
+ End init Filter-Outside -->
 
 <!-- Begin init Filter-Inside -->
-<div ng-class="{active: models.activeTab === 'InSide'}" class="tab-pane row">
+<div >
     <panel title="Table: Template Inside">
         <div class="form-group form-inline clearfix ">
             <label class="pull-right">Search: <input class="form-control" ng-model="_filter._$"></label>
@@ -105,11 +105,12 @@
                   indent="30"
                   indent-plus="20"
                   indent-unit="px"
-                  enable-hotkey="true"
+                  enable-hotkey="false"
                   enable-drag="true"
                   enable-drop="true"
                   enable-status="true"
-                  enable-move="true">
+                  enable-move="true"
+                  >
         </tree-dnd>
     </panel>
 </div>
